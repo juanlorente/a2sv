@@ -124,8 +124,9 @@ def runScan(s_type):
     global drown_result
     global crime_result
     global anonymous_result
+    global TERMINATOR.YON
     
-    print " "
+    print "GREEN"
     # SSL Check Logic --------------------------- 
     showDisplay(displayMode,GREEN+"[INF] Check the SSL.."+END)
     result = subprocess.Popen(['timeout','4','openssl','s_client','-connect',targetIP+":"+str(port)], stderr=subprocess.STDOUT, stdout=subprocess.PIPE).communicate()[0]
